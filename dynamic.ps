@@ -1,0 +1,27 @@
+/Times-Bold findfont 22 scalefont setfont
+306 448 translate
+
+(Finest Classic American Pale Ale)
+22 90 140 outsidecircletext
+
+/Times-Roman findfont 22 scalefont setfont
+(ABV 4,9%)
+22 90 118 outsidecircletext
+
+/Times-Roman findfont 22 scalefont setfont
+(04.2019)
+22 -90 118 insidecircletext
+
+
+% We call the procedures like this:
+%/Helvetica findfont 30 scalefont setfont
+
+gsave
+3 3 scale
+-25 -20 moveto (https://www.uio.no) ( ) /qrcode /uk.co.terryburton.bwipp findresource exec
+grestore
+
+showpage
+
+
+
