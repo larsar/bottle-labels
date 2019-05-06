@@ -1,5 +1,5 @@
 generate:
-	cat barcode.ps circular.ps dynamic.ps > test.ps && gs -dNOSAFER -Iinc -sDEVICE=jpeg -dJPEGQ=100 -dNOPAUSE -dBATCH -dSAFER -r300 -sOutputFile=test.jpg test.ps && open test.jpg
+	cat barcode.ps circular.ps dynamic.ps > test.ps && gs -dNOSAFER -Iinc -sDEVICE=jpeg -dJPEGQ=100 -dNOPAUSE -dBATCH -dSAFER -r300 -sOutputFile=test.jpg test.ps && convert test.jpg -resize 236x236 test.jpg && open test.jpg
 
 install:
 	pip install -r requirements.txt
